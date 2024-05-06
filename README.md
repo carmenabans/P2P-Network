@@ -5,7 +5,8 @@
 In the peer-to-peer system project, we designed and implemented a robust distributed system by integrating three key technologies: TCP/IP sockets, SOAP+HTTP, and RPC. The project consisted of three main parts: firstly, the development of a TCP/IP socket-based communication system to enable connectivity between system nodes; secondly, the addition of SOAP+HTTP services to enhance functionality, such as providing current date and time information via a web service; and finally, the integration of RPC to handle remote procedure calls and facilitate the printing of user operations on the server side. By combining these technologies, we successfully created a scalable and efficient peer-to-peer system, showcasing my expertise in distributed systems and proficiency in implementing diverse communication protocols.
 
 ## Network diagram
-<img width="876" alt="diagram" src="https://github.com/carmenabans/P2P-Network/assets/112978307/f0663cfe-6ee4-4f15-be46-d6a7cf83e039">
+<img width="888" alt="Protocol Diagram" src="https://github.com/carmenabans/P2P-Network/assets/112978307/0e5e22d6-6b61-40e2-a52c-94e4dbd2be42">
+
 
 
 
