@@ -1,0 +1,45 @@
+# Instrucciones para la compilación de los procesos
+
+## FICHEROS EN C
+
+Para crear correctamente el proyecto hay que seguir los siguientes pasos:
+
+1. Abrir una nueva carpeta.
+2. Copiar en la carpeta nuestro archivo rpc.x.
+3. Ejecutar por terminal rpcgen -NMa rpc.x (esto generará automáticamente los archivos para ejecutar la comunicación rpc por defecto).
+4. Borrar los archivos rpc_client.c, rpc_server.c y Makefile.rpc(generados por defecto en el punto anterior).
+5. Copiar dentro de la carpeta los siguientes archivos entregados: Makefile.rpc, rpc_server.c, server.c, lines.c, lines.h, lista.c, lista.h, web_service.py, client.py, list_data.dat y los archivos para probar GET_FILE. 
+6. Ejecutar por terminal make -f Makefile.rpc
+
+Esto compilará todos los archivos .c
+
+## Ficheros python
+
+Los ficheros python (.py) no hace falta compilarlos.
+
+
+# Instrucciones para el despliegue de todos los procesos involucrados en la aplicación.
+
+Los procesos se deben ejecutar con los siguientes comandos en una terminal para cada uno.
+
+Se usará el puerto 5000 para el ejemplo de ejecución del servidor pero este se puede cambiar a cualquier otro (menos al 8000 que es utilizado por el servicio web o el 4334 utilizado por el servidor rpc). El cliente especificará los parámetros indicados al inicial el servidor.
+
+## SERVIDOR
+./server -p 5000 
+
+Se mostrará:
+s> init server 0.0.0.0: 5000
+
+## SERVIDOR RPC
+./rpc_server
+
+
+## SERVICIO WEB
+python3 web_service.py
+
+
+## CLIENTE
+python3 client.py -s 0.0.0.0 -p 5000
+
+Se mostrará la linea de comandos:
+c> 
